@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links -->
+  <link rel="icon" href="images/pokedexfavicon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Main JS -->
+  <script defer src="script.js"></script>
+
+  <title>Pokédex</title>
+</head>
+<body>
+  
+    <main>
+        <img src="images/pokemonlogo.png" alt="Logo Pokémon" class="logo">
+        <img src="#" alt="pokemon" class="pokemon__image">
+        <h1 class="pokemon__data">
+            <span class="pokemon__number"></span> - <span class="pokemon__name"></span>
+        </h1>
+    
+        <!-- Pokémon Info -->
+        <div class="pokemon__info">
+            <div class="pokemon__types">
+                <h3>Types:</h3>
+                <div class="types-container"></div>
+            </div>
+            
+            <div class="pokemon__moves">
+                <h3>Moves:</h3>
+                <div class="moves-container"></div>
+            </div>
+            
+            <div class="pokemon__height">
+                <h3>Height:</h3>
+                <span class="height-value"></span>
+            </div>
+            
+            <div class="pokemon__weight">
+                <h3>Weight:</h3>
+                <span class="weight-value"></span>
+            </div>
+        </div>  
+    
+        <!-- Nova Seção: Pokémon Stats -->
+        <div class="pokemon__stats">
+            <h3>Stats</h3>
+            <span>HP: 
+                <div class="pokemon__stat-bar">
+                    <div class="pokemon__stat-bar-fill hp" style="width: 50%;">
+                        <span class="stat-number">50</span> <!-- Número centralizado -->
+                    </div>
+                </div>
+            </span>
+            <span>Attack: 
+                <div class="pokemon__stat-bar">
+                    <div class="pokemon__stat-bar-fill attack" style="width: 70%;">
+                        <span class="stat-number">70</span> <!-- Número centralizado -->
+                    </div>
+                </div>
+            </span>
+            <span>Defense: 
+                <div class="pokemon__stat-bar">
+                    <div class="pokemon__stat-bar-fill defense" style="width: 60%;">
+                        <span class="stat-number">60</span> <!-- Número centralizado -->
+                    </div>
+                </div>
+            </span>
+            <span>Speed: 
+                <div class="pokemon__stat-bar">
+                    <div class="pokemon__stat-bar-fill speed" style="width: 80%;">
+                        <span class="stat-number">80</span> <!-- Número centralizado -->
+                    </div>
+                </div>
+            </span>
+        </div>
+    
+        <!-- Formulário de busca -->
+        <form class="form">
+            <input type="search" class="input__search" placeholder="Name or Number" required />
+        </form>
+    
+        <!-- Botões -->
+        <div class="buttons">
+            <button class="button btn-prev">Prev &lt;</button>
+            <button class="button btn-next">Next &gt;</button>
+        </div>
+    
+        <!-- Pokedex Image -->
+        <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+    </main>
+</body>
+</html>
