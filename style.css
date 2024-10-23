@@ -5,29 +5,29 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Oxanium', cursive;
-  -webkit-user-select: none; /* Para navegadores WebKit (Chrome, Safari, etc.) */
-  -moz-user-select: none;    /* Para Firefox */
-  -ms-user-select: none;     /* Para IE e Edge */
+  -webkit-user-select: none;
+  -moz-user-select: none;    
+  -ms-user-select: none;     
   user-select: none;
   
   img {
-    -webkit-user-select: none; /* Para navegadores WebKit */
-    -moz-user-select: none;    /* Para Firefox */
-    -ms-user-select: none;     /* Para IE e Edge */
-    user-select: none;         /* Padrão */
-    pointer-events: none;      /* Impede interações com a imagem */
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;    
+    user-select: none;         
+    pointer-events: none;      
   }
 }
 
 body {
     text-align: center;
     background: 
-      linear-gradient(to bottom, rgba(123, 129, 134, 0.8), rgba(9, 9, 9, 0.8)), /* Gradiente com opacidade */
-      url('images/backgroundpokemon.png'); /* Imagem de fundo */
+      linear-gradient(to bottom, rgba(123, 129, 134, 0.8), rgba(9, 9, 9, 0.8)), 
+      url('images/backgroundpokemon.png'); 
     min-height: 100vh;
-    background-size: 100% auto; /* Ajusta o tamanho da imagem de fundo */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: 100% auto; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
   
 main {
@@ -51,12 +51,12 @@ main {
 }
 
 .logo {
-    width: 110%; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    position: absolute; /* Para posicionar no topo esquerdo */
-    top: 0%; /* Distância do topo */
-    left: -130%; /* Distância da esquerda */
-    display: block; /* Mantém o bloco */
+    width: 110%;
+    height: auto; 
+    position: absolute; 
+    top: 0%; 
+    left: -130%; 
+    display: block; 
 }
 
 .pokemon__data {
@@ -66,7 +66,7 @@ main {
   top: 54.5%;
   right: 27%;
   font-size: clamp(8px, 5vw, 25px);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
 }
 
 .pokemon__name {
@@ -94,7 +94,7 @@ main {
 }
 
 .input__search:focus {
-  border-color: #2a2b2b; /* Destaque na borda ao focar */
+  border-color: #2a2b2b; 
 }
 
 .buttons {
@@ -120,7 +120,7 @@ main {
 }
 
 .button:hover {
-  background-color: #333436; /* Alteração ao passar o mouse */
+  background-color: #333436; 
 }
 
 .button:active {
@@ -130,7 +130,7 @@ main {
 
 @media (max-width: 768px) {
   .pokemon__image {
-    height: 30%; /* Aumenta a imagem em telas menores */
+    height: 30%; 
   }
 
   .pokemon__data {
@@ -140,100 +140,100 @@ main {
   }
 
   .form {
-    width: 80%; /* Ajusta a largura do campo de busca */
+    width: 80%; 
   }
 
   .buttons {
-    flex-direction: column; /* Empilha os botões em vez de alinhá-los lado a lado */
-    gap: 10px; /* Reduz o espaço entre os botões */
+    flex-direction: column;
+    gap: 10px; 
   }
 
   .button {
-    width: 100%; /* Botões ocupam toda a largura */
+    width: 100%; 
   }
 }
 
 .pokemon__info {
     position: absolute;
-    top: 10%; /* Ajuste a posição vertical conforme necessário */
-    right: -80%; /* Ajuste para alinhar à direita */
+    top: 10%; 
+    right: -80%;
     text-align: left;
-    color: #000000; /* Cor do texto em branco */
-    width: 300px; /* Aumentada a largura do quadrado para mais espaço */
-    padding: 20px; /* Aumentado o espaçamento interno */
-    background-color: rgba(215, 34, 64, 0.85); /* Cor de fundo cinza escuro com um pouco de opacidade */
-    border: 3px solid #000000; /* Borda um pouco mais clara */
-    border-radius: 12px; /* Bordas arredondadas */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra mais forte para um efeito de profundidade */
-    font-size: clamp(10px, 5vw, 1.2rem); /* Aumentado o tamanho da fonte */
-    transition: all 0.5s ease; /* Adiciona uma suavização a todas as propriedades */
-    margin-bottom: 5px; /* Espaço abaixo dos títulos */
-    font-weight: 600; /* Negrito para os títulos */
-    color: #000000; /* Títulos em branco */
+    color: #000000; 
+    width: 300px; 
+    padding: 20px; 
+    background-color: rgba(215, 34, 64, 0.85); 
+    border: 3px solid #000000; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    font-size: clamp(10px, 5vw, 1.2rem); 
+    transition: all 0.5s ease; 
+    margin-bottom: 5px; 
+    font-weight: 600; 
+    color: #000000; 
 }
 
 .pokemon__types,
 .pokemon__moves,
 .pokemon__height,
 .pokemon__weight {
-    margin-top: 15px; /* Espaçamento entre seções */
-    padding: 10px; /* Espaçamento interno */
-    background-color: rgba(255, 255, 255, 0.85); /* Fundo das caixas com opacidade e cor cinza escuro */
-    border: 2px solid #555; /* Borda um pouco mais clara */
-    border-radius: 8px; /* Bordas arredondadas */
+    margin-top: 15px; 
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.85); 
+    border: 2px solid #555; 
+    border-radius: 8px; 
 }
 
 .pokemon__types h3,
 .pokemon__moves h3,
 .pokemon__height h3,
 .pokemon__weight h3 {
-    margin-bottom: 5px; /* Espaço abaixo dos títulos */
-    font-weight: 600; /* Negrito para os títulos */
-    color: #000000; /* Títulos em branco */
+    margin-bottom: 5px; 
+    font-weight: 600; 
+    color: #000000; 
 }
 
 .pokemon__types span,
 .pokemon__moves span,
 .pokemon__height span,
 .pokemon__weight span {
-    display: block; /* Cada informação em uma nova linha */
-    margin: 2px 0; /* Margem entre as informações */
-    color: #040404; /* Cor uniforme para os textos das informações (cinza claro) */
+    display: block; 
+    margin: 2px 0; 
+    color: #040404; 
 }
 
 .pokemon__stats {
     position: absolute;
-    top: 40%; /* Ajuste conforme necessário */
-    left: -130%; /* Ajuste para alinhar à esquerda */
+    top: 40%; 
+    left: -130%;
     text-align: left;
-    color: #ffffff; /* Texto em branco */
-    width: 500px; /* Largura do quadrado */
-    padding: 20px; /* Espaçamento interno */
-    background-color: rgba(215, 34, 64, 0.85); /* Fundo cinza escuro com opacidade */
-    border: 3px solid #000000; /* Borda */
-    border-radius: 12px; /* Bordas arredondadas */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra */
-    font-size: clamp(10px, 5vw, 1.2rem); /* Tamanho da fonte */
-    transition: all 0.5s ease; /* Adiciona suavização ao stats também */
+    color: #ffffff;
+    width: 500px; 
+    padding: 20px; 
+    background-color: rgba(215, 34, 64, 0.85); 
+    border: 3px solid #000000; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+    font-size: clamp(10px, 5vw, 1.2rem);
+    transition: all 0.5s ease; 
 }
 
 .pokemon__stat-bar {
-    background-color: #ddd; /* Cor de fundo da barra */
-    border-radius: 10px; /* Ajuste aqui para o nível de arredondamento desejado */
-    overflow: hidden; /* Impede que o conteúdo transborde */
-    height: 25px; /* Altura da barra */
-    margin: 5px 0; /* Espaçamento entre as barras */
-    position: relative; /* Necessário para posicionar os números corretamente */
-    border: 2px solid #000000; /* Borda */
-    border-radius: 12px; /* Bordas arredondadas */
+    background-color: #ddd; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    height: 25px; 
+    margin: 5px 0; 
+    position: relative; 
+    border: 2px solid #000000; 
+    border-radius: 12px; 
 }
 
 .pokemon__stat-value {
-    position: absolute; /* Permite posicionar o número sobre a barra */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta a posição para o centro */
-    color: #000000; /* Cor do texto */
-    font-weight: bold; /* Estilo do texto */
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    color: #000000; 
+    font-weight: bold; 
 }
 
 .pokemon__stat-bar-fill {
@@ -241,7 +241,7 @@ main {
     padding: 0 5px;
     height: 100%;
     color: rgb(255, 255, 255);
-    transition: width 0.3s ease; /* Adiciona transição aos stats */
+    transition: width 0.3s ease;
     border-radius: 8px;
 }
 
